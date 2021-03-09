@@ -39,7 +39,8 @@ def sendit():
     html = urllib.request.urlopen('https://www.cvs.com/immunizations/covid-19-vaccine').read()
     
     # If not all appointments are booked...
-    if b'At this time, all appointments in Massachusetts are booked.' not in html:
+    lookforstring = f"At this time, all appointments in {state} are booked."
+    if lookforstring.encode() not in html:
         
         # Login via STMP and send email
         with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
