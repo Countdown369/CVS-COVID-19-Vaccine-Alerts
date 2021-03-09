@@ -7,5 +7,4 @@
  
  If other's want to edit and improve this, please go ahead! I'm just looking to help people get their vaccines, and I'm no professional developer.
  
- - Connor Brown
- - cabrown802@gmail.com
+ - Email: cabrown802@gmail.com
