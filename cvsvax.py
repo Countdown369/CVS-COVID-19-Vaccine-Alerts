@@ -23,8 +23,9 @@ UPDATE = 60.0
 port = 465  
 
 # Message in the email.
-message = "Book an appointment at CVS! https://www.cvs.com/immunizations/covid-19-vaccine"
-
+text = "Book an appointment at CVS! https://www.cvs.com/immunizations/covid-19-vaccine"
+subject = "CVS Vaccine Appointment Available!"
+message = 'Subject: {}\n\n{}'.format(subject, text)
 # Create a secure SSL context
 context = ssl.create_default_context()
 
